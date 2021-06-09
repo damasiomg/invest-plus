@@ -14,7 +14,6 @@
   "dependencies": {
     "angular": "^1.5.10",
     "angular-animate": "1.5.10",
-    "angular-cookie": "^4.1.0",
     "angular-route": "^1.5.10"
   },
   "devDependencies": {
