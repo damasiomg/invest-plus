@@ -58,12 +58,7 @@ angular
 
     validateList(list){
         return list.filter(item => {
-            return(item.is_active 
-                && (parseFloat(item.operability.minimum_initial_application_amount) > 0)
-                && (item.profitabilities.m12 !== null)
-                && (item.profitabilities.month !== null)
-                && (parseFloat(item.profitabilities.month) > 0.01)
-            )
+            return((item.profitabilities.m12 !== null))
         });
     }
 
