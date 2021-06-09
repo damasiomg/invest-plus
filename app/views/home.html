@@ -1,0 +1,46 @@
+<div class="home" ng-controller="HomeController as vm">
+    <div class="home-banner">
+        <div>Fundos de Investimento</div>
+        <div class="home-small-title">Conheça a nossa lista de fundos</div>
+
+    </div>
+
+    <div class="home-container">
+        
+        <div>
+            <search-box></search-box>
+
+            <funds-list 
+                ng-if="vm.filtredList"
+                filtred-data="vm.filtredList"
+            ></funds-list>
+
+            <div ng-if="!vm.filtredList" class="home-loading">
+                <img width="40" src="/assets/preloader.svg" alt="Loading..."/>
+            </div>
+        </div>
+        
+        <div class="home-hidden__mobile">
+            <range-filter
+                ng-repeat="type in vm.rangeTypes track by $index"
+
+                title="{{vm.investimentList.rangeValues[type].label}}"
+                code="{{type}}"
+                list="::vm.investimentList.rangeValues[type].list"
+                prefix={{vm.investimentList.rangeValues[type].prefix}}
+                sufix={{vm.investimentList.rangeValues[type].sufix}}
+                format="vm.investimentList.rangeValues[type].format"
+            >   
+            </range-filter>
+            <check-filter
+                ng-if="vm.macroStrategies.length" 
+                ng-repeat="macro in vm.macroStrategies track by $index"
+                list="::vm.investimentList[macro].strategies"
+                strategy="{{vm.investimentList.maps[macro]}}"
+                macro="{{macro}}"
+            ></check-filter>
+        </div>
+    </div>
+</div>
+
+

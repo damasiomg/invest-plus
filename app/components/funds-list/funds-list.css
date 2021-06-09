@@ -1,0 +1,285 @@
+:root{
+    --border-risk-width: 5px;
+}
+
+.funds-list{
+    box-shadow: 6px 6px 25px 0 rgb(97 120 146 / 12%);
+}
+
+.funds-list__thead{
+    background: #fff;
+    color: #505152;
+    font: 700 9px/2 "Roboto",sans-serif;
+    text-align: left;
+}
+
+.funds-list__section-td{
+    background: #eff0f2;
+    text-transform: uppercase;
+    color: #505152;
+    font: 400 8px "Roboto",sans-serif;
+    font-weight: bold;
+}
+
+.funds-list__item{
+    background: #fff;
+    cursor: pointer;
+    color: #505152;
+    font: 400 10px/14px "Roboto",sans-serif;
+}
+
+.funds-list__icon-button{
+    transform: rotate(105deg);
+    color: #fff;
+}
+
+.funds-list__small-button{
+    cursor: pointer;
+    background: #119c9f;
+    border: solid 2px transparent;
+    color: #fff;
+    display: block;
+    height: 18px;
+    width: 18px;
+    position: relative;
+    text-align: center;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0px rgb(0 0 0 / 16%);
+}
+
+.funds-list__small-button:hover{
+    background: #0f8a8d;
+}
+
+.funds-list__item--details{
+    cursor: initial;
+}
+
+.funds-list__diagram{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: dotted 1px rgba(128, 128, 128, 0.781);
+}
+
+.funds-list__class{
+    color: #757678;
+}
+
+.funds-list__td-list{
+    background: #fff; 
+}
+
+.funds-list__details{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.funds-list__details-span{
+    font-weight: normal;
+}
+
+.funds-list__ul{
+    list-style: none;
+    margin-left: 0;
+    font-weight: bold;
+    font-size: 9px;
+    line-height: 1.8;
+}
+
+.funds-list__risk{
+    border-left: var(--border-risk-width) solid #fff;
+}
+
+.funds-list__risk--1{
+    border-color: #a6ecfc;
+}
+
+.funds-list__risk--2{
+    border-color: #68f1dd;
+}
+
+.funds-list__risk--3{
+    border-color: #91ed6e;
+}
+
+.funds-list__risk--4{
+    border-color: #b0f42a;
+}
+
+
+.funds-list__risk--5{
+    border-color: #ddf40c;
+}
+
+.funds-list__risk--6{
+    border-color: #faf00e;
+}
+
+.funds-list__risk--7{
+    border-color: #ffdc00;
+}
+
+.funds-list__risk--8{
+    border-color: #fb0;
+}
+
+.funds-list__risk--9{
+    border-color: #f80;
+}
+
+.funds-list__risk--10{
+    border-color: #ff5e00;
+}
+
+.funds-list__risk--11{
+    border-color: #ff0600;
+}
+
+.funds-list__risk--12{
+    border-color: #b51414;
+}
+
+.funds-list__child{
+    background: #fff;
+    transition: all .5s linear;
+}
+
+.funds-list__desktop{
+    display: table;
+}
+
+.funds-list__mobile{
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+
+    .funds-list__desktop{
+        display: none;
+    }
+
+    .funds-list__mobile{
+        display: block;
+    }
+
+    .funds-list__category{
+        background: #eff0f2;
+        text-transform: uppercase;
+        color: #505152;
+        font: 400 8px "Roboto",sans-serif;
+        font-weight: bold;
+        align-items: center;
+        display: flex;
+        padding: 0 13px;
+        height: 30px;
+    }
+
+    .funds-list__card{
+        cursor: pointer;
+        border-bottom: solid 2px #eff0f2;
+        box-sizing: border-box;
+        padding: 8px 13px;
+    }
+
+    .funds-list__item-card{
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        color: #505152;
+        font: 500 10px/16px "Roboto",sans-serif;
+    }
+
+    .funds-list__item-card p{
+        margin-bottom: 0;
+    }
+
+    .funds-list__sub-item{
+        font-weight: bold;
+    }
+
+    .funds-list__left-item{
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        padding-bottom: 5px;
+    }
+
+    .funds-list__right-item{
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-bottom: 5px;
+    }
+
+    .funds-list__main-title-mobile{
+        font-size: 11px;
+        margin-bottom: 0;
+    }
+
+    .funds-list__subtitle-mobile{
+        color: #757678;
+        font-size: 9px;
+    }
+
+    .funds-list__mobile-risk-incator{
+        display: inline-block;
+        height: 14px;
+        width: 14px;
+        border-radius: 3px;
+        background: #a6ecfc;
+    }
+
+    .funds-list__mobile-risk-incator--1{
+        background: #a6ecfc;
+    }
+    
+    .funds-list__mobile-risk-incator--2{
+        background: #68f1dd;
+    }
+    
+    .funds-list__mobile-risk-incator--3{
+        display: inline-block;
+        height: 14px;
+        width: 14px;
+        border-radius: 3px;
+        background: #91ed6e;
+    }
+    
+    .funds-list__mobile-risk-incator--4{
+        background: #b0f42a;
+    }
+    
+    .funds-list__mobile-risk-incator--5{
+        background: #ddf40c;
+    }
+    
+    .funds-list__mobile-risk-incator--6{
+        background: #faf00e;
+    }
+    
+    .funds-list__mobile-risk-incator--7{
+        background: #ffdc00;
+    }
+    
+    .funds-list__mobile-risk-incator--8{
+        background: #fb0;
+    }
+    
+    .funds-list__mobile-risk-incator--9{
+        background: #f80;
+    }
+    
+    .funds-list__mobile-risk-incator--10{
+        background: #ff5e00;
+    }
+    
+    .funds-list__mobile-risk-incator--11{
+        background: #ff0600;
+    }
+    
+    .funds-list__mobile-risk-incator--12{
+        background: #b51414;
+    }
+}

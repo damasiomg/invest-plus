@@ -1,0 +1,55 @@
+.range-filter{
+    background: #fff;
+    border: 0;
+    box-shadow: 6px 6px 25px 0 rgb(97 120 146 / 12%);
+    border-radius: 3px 3px;
+    color: #505152;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 8px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.range-filter__value{
+    font-size: 8px;
+    color: #505152;
+    font: 500 8px/1.5 "Roboto",sans-serif;
+}
+
+.range-filter__input{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 2px;
+    margin-top: 4px;
+    border-radius: 1px;
+    cursor: pointer;
+    background: linear-gradient(to right, #119c9f 0%, #119c9f 100%);
+
+}
+
+
+
+.range-filter input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    cursor: pointer;
+    border: solid 3px #505152;
+    border-radius: 50%;
+
+  }
+  
+.range-filter input[type="range"] ::-moz-range-thumb {
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    cursor: pointer;
+    border: solid 3px #505152;
+    border-radius: 50%;
+}

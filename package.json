@@ -1,0 +1,34 @@
+{
+  "name": "invest_plus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "commonjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp",
+    "production": "gulp --production"
+  },
+  "author": "Diego Damasio",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.10",
+    "angular-animate": "1.5.10",
+    "angular-cookie": "^4.1.0",
+    "angular-route": "^1.5.10"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-preset-env": "1.6.0",
+    "font-awesome": "4.7.0",
+    "gulp": "3.9.1",
+    "gulp-babel": "7.0.0",
+    "gulp-concat": "2.6.1",
+    "gulp-htmlmin": "3.0.0",
+    "gulp-uglify": "3.0.0",
+    "gulp-uglifycss": "1.0.8",
+    "gulp-watch": "4.3.11",
+    "gulp-webserver": "0.9.1",
+    "run-sequence": "2.2.0"
+  }
+}

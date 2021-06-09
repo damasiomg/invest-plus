@@ -1,0 +1,54 @@
+.home{
+    display: flex;
+    flex-direction: column;
+}
+
+.home-container{
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    margin: auto;
+    width: 70%;
+    gap: 20px;
+}
+
+.home-banner{
+    background: url(/assets/banner.jpg) no-repeat center top;
+    padding: 60px 0px;
+    font: 400 35px/1.3 "Roboto Slab",serif; 
+    display: flex;
+    color: #fff;
+    margin-bottom: 20px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.home-loading{
+    background: #fff;
+    display: flex;
+    height: 60px;
+    box-shadow: 6px 6px 25px 0 rgb(97 120 146 / 12%);
+    justify-content: center;
+    border-radius: 3px 3px;
+
+}
+
+.home-small-title{
+    font: 300 20px/1.5 "Roboto",sans-serif;
+}
+
+@media screen and (max-width: 767px) {
+
+    .home-hidden__mobile{
+        display: none;
+    }
+
+    .home-container{
+        grid-template-columns: 1fr;
+    }
+
+    .home-banner{
+        display: none;
+    }
+}
+
