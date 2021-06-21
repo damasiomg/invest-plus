@@ -9,7 +9,7 @@
 .funds-list__thead{
     background: #fff;
     color: #505152;
-    font: 700 9px/2 "Roboto",sans-serif;
+    font: 700 13px/2 "Roboto",sans-serif;
     text-align: left;
 }
 
@@ -17,7 +17,7 @@
     background: #eff0f2;
     text-transform: uppercase;
     color: #505152;
-    font: 400 8px "Roboto",sans-serif;
+    font: 400 13px "Roboto",sans-serif;
     font-weight: bold;
 }
 
@@ -25,7 +25,7 @@
     background: #fff;
     cursor: pointer;
     color: #505152;
-    font: 400 10px/14px "Roboto",sans-serif;
+    font: 400 13px/17px "Roboto",sans-serif;
 }
 
 .funds-list__icon-button{
@@ -39,8 +39,8 @@
     border: solid 2px transparent;
     color: #fff;
     display: block;
-    height: 18px;
-    width: 18px;
+    height: 20px;
+    width: 20px;
     position: relative;
     text-align: center;
     border-radius: 50%;
@@ -84,7 +84,7 @@
     list-style: none;
     margin-left: 0;
     font-weight: bold;
-    font-size: 9px;
+    font-size: 13px;
     line-height: 1.8;
 }
 
@@ -168,7 +168,7 @@
         background: #eff0f2;
         text-transform: uppercase;
         color: #505152;
-        font: 400 8px "Roboto",sans-serif;
+        font: 400 13px "Roboto",sans-serif;
         font-weight: bold;
         align-items: center;
         display: flex;
@@ -187,7 +187,7 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         color: #505152;
-        font: 500 10px/16px "Roboto",sans-serif;
+        font: 500 13px/16px "Roboto",sans-serif;
     }
 
     .funds-list__item-card p{
@@ -214,13 +214,13 @@
     }
 
     .funds-list__main-title-mobile{
-        font-size: 11px;
+        font-size: 14px;
         margin-bottom: 0;
     }
 
     .funds-list__subtitle-mobile{
         color: #757678;
-        font-size: 9px;
+        font-size: 12px;
     }
 
     .funds-list__mobile-risk-incator{
