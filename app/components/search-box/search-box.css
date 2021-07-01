@@ -28,6 +28,7 @@
     margin-bottom: 0;
     font: 12px/1.5 "Roboto",sans-serif;
     color: #505152;
+    line-height: 4px;
 }
 
 .search-box input[type="search"]:focus{
