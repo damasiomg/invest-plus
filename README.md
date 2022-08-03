@@ -11,7 +11,7 @@ Services, directives, filters, contexts and components.
 ![](invest-plus.png)
 
 ## Requirements:
-1. `node 8.16.0 or >`
+1. `node 8.x or 10.x`
 2. `npm 6.4.1`
 3. `gulp 3.9.1`
 
