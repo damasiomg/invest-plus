@@ -18,7 +18,11 @@ angular
                     .then((response) => {
                         if(response && response.data){
                             const normalizedList = this.normalizeData(response.data);
-                            sessionStorage.setItem('funds', JSON.stringify(normalizedList));
+                            try {
+                                sessionStorage.setItem('funds', JSON.stringify(normalizedList));
+                            }catch(e){
+                                localStorage.clear();
+                            }
                             resolve(normalizedList);
                         }else{
                             reject();
